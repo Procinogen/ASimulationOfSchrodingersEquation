@@ -1,11 +1,4 @@
-Hello!
-
-I'm Erwin.
-
-Erwin the electron!
-
-I'm here to teach you about the wonderful world of quantum mechanics!
-
-Specifically...
-
-Schrodinger's equation!
+Hello! |PAUSE| my name is Erwin!
+|NEXT|
+I'm here to teach you about|PAUSE|.|PAUSE|.|PAUSE|.|PAUSE|
+Quantum mechanics!

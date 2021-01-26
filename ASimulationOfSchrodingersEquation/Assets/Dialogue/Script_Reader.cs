@@ -14,11 +14,14 @@ public class Script_Reader : MonoBehaviour
     void Start()
     {
         dialogue = this.gameObject.GetComponent<Text>(); //Set the dialogue to be this gameobject's text
-        script = scriptObject.text.Split("\n"[0]); //Split the script into lines
-        dialogue.text = script[0]; //Start the dialogue on the first line
+        script = scriptObject.text.Split(new string[] { "|NEXT|" }, System.StringSplitOptions.None); //Split the script into lines
+        string[] tempSubScript = script[currentLine].Split(new string[] { "|PAUSE|" }, System.StringSplitOptions.None);
+        dialogue.text = tempSubScript[0]; //Start the dialogue on the first line
     }
 
     private int currentLine = 0; //Variable to count whatever line we're on
+    private int currentSubLine = 1;
+    private bool subIsDone = false;
     private bool isDone = false;
 
     // Update is called once per frame
@@ -26,10 +29,23 @@ public class Script_Reader : MonoBehaviour
     {
         try
         {
+            string[] subScript = script[currentLine].Split(new string[] { "|PAUSE|" }, System.StringSplitOptions.None);
             if (Input.GetButtonUp("Advance") && !isDone) //Check if the player advances the script
             {
-                currentLine += 2; //Increase the counter by 2 (skip the whitespace in between lines)
-                dialogue.text = script[currentLine]; //Update the text
+
+                try
+                {
+                    dialogue.text += subScript[currentSubLine];
+                    currentSubLine++;
+                }
+                catch (System.IndexOutOfRangeException exception)
+                {
+                    dialogue.text = "";
+                    currentLine++;
+                    currentSubLine = 1;
+                    subScript = script[currentLine].Split(new string[] { "|PAUSE|" }, System.StringSplitOptions.None);
+                    dialogue.text = subScript[0];
+                }
             }
         } 
         catch (System.IndexOutOfRangeException e)
