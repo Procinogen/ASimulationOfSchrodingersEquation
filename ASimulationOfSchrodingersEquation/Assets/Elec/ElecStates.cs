@@ -6,32 +6,32 @@ public class ElecStates : MonoBehaviour
 {
     #region State Stuff
     //States
-    protected enum States {
+    public enum States {
         IDLE,
         TALKING,
         MOVING
     }
 
     //Whatever state he's currently in
-    protected States currentState;
+    public States currentState;
 
     #endregion State Stuff
 
     #region State Functions
     //Functions for setting state \/
-    protected void setToIdle()
+    public void setToIdle()
     {
         currentState = States.IDLE;
         return;
     }
 
-    protected void setToTalking()
+    public void setToTalking()
     {
         currentState = States.TALKING;
         return;
     }
 
-    protected void setToMoving()
+    public void setToMoving()
     {
         currentState = States.MOVING;
         return;
@@ -59,6 +59,10 @@ public class ElecStates : MonoBehaviour
             case States.IDLE:
                 Vector3 targetPositionRaw = new Vector3(0, Mathf.Sin(Time.frameCount * phaseShift) * Mathf.Rad2Deg, 0); //Changes his target position to be his original position offset by whatever amount the sine function says so
                 transform.position = oldPosition + (targetPositionRaw * amplitude); //transform his position
+                break;
+            case States.MOVING:
+                oldPosition = transform.position;
+                transform.LookAt(GameObject.FindGameObjectsWithTag("MainCamera")[0].transform.position);
                 break;
             default:
                 break;

@@ -1,4 +1,34 @@
-Hello! |PAUSE| my name is Erwin!
+Hello!
 |NEXT|
-I'm here to teach you about|PAUSE|.|PAUSE|.|PAUSE|.|PAUSE|
-Quantum mechanics!
+My name is Erwin!
+|NEXT|
+Erwin the electron!
+|NEXT|
+I'm here to teach you about|PAUSE|.|PAUSE|.|PAUSE|.
+|NEXT|
+Quantum mechanics! |PAUSE| Specifically, Schrodinger's equation.
+|NEXT|
+You're probably asking, "What even is Schrodinger's equation?"
+|NEXT|
+To understand, we need to take a look at classical mechanics. |PAUSE|
+You're probably familiar with F = ma, right? |PAUSE| If not, here's a little recap:
+|NEXT|
+F = ma is basically the quintessential formula in all of classical mechanics. |PAUSE|
+Using this formula, we're able to derive everything we need to know about a system or an individual object.
+(Kinetic energy, momentum, etc.)
+|NEXT|
+But what does this actually *mean*? |PAUSE|
+F represents the net force. |PAUSE|
+m represents the object (or system's) mass. |PAUSE|
+And a represents the object (or system's) acceleration.
+|NEXT|
+Now with that said, we can finally talk about schrodinger's equation. |PAUSE|
+You can think of schrodinger's equation as the quantum-equivalent of F = ma.
+|NEXT|
+Here's what the equation looks like.
+|NEXT|
+This h-looking symbol (pronounced h-bar) represents the planck length divided by 2 times pi. It's one of the scientific constants like the speed of light. |PAUSE|
+It's basically the smallest measurement of length that scientists have been able to find.
+|NEXT|
+This represents Psi. It's a function that represents the shape of the wave function. |PAUSE|
+This will change depending on the rest of the equation (because it would be a different situation each time).
