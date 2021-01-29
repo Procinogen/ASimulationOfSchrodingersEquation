@@ -76,6 +76,28 @@ public class Script_Reader : actions
                             case 11:
                                 StartCoroutine(AnimateMove(actor.gameObject.transform.position, GameObject.FindGameObjectsWithTag("equationVariable")[1].transform.position, 0.8f, actor, true));
                                 break;
+                            case 12:
+                                StartCoroutine(AnimateMove(actor.gameObject.transform.position, GameObject.FindGameObjectsWithTag("equationVariable")[2].transform.position, 0.8f, actor, true));
+                                break;
+                            case 13:
+                                StartCoroutine(AnimateMove(actor.gameObject.transform.position, GameObject.FindGameObjectsWithTag("equationVariable")[3].transform.position, 0.8f, actor, true));
+                                break;
+                            case 14:
+                                StartCoroutine(AnimateMove(actor.gameObject.transform.position, GameObject.FindGameObjectsWithTag("equationVariable")[4].transform.position, 0.8f, actor, true));
+                                break;
+                            case 15:
+                                StartCoroutine(AnimateMove(actor.gameObject.transform.position, GameObject.FindGameObjectsWithTag("equationVariable")[5].transform.position, 0.8f, actor, true));
+                                break;
+                            case 18:
+                                StartCoroutine(TeleportObject(new Vector3(-11.43f, -0.8f, -3.435f), GameObject.FindGameObjectsWithTag("equation")[0], false));
+                                StartCoroutine(AnimateMove(actor.gameObject.transform.position, new Vector3(-3.28f, 3.17f, -5.00f), 2.5f, actor, true));
+                                break;
+                            case 21:
+                                StartCoroutine(AnimateObject(GameObject.FindGameObjectsWithTag("wallmaster")[0], new Vector3(-2.5f, 3f, -1.94f), 2.5f, true));
+                                break;
+                            case 22:
+                                StartCoroutine(DeformObject(GameObject.FindGameObjectsWithTag("wallmaster")[0], new Vector3(1, 10, 1), 3.5f, true));
+                                break;
                             default:
                                 acting = false;
                                 break;

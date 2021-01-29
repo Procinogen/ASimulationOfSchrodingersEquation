@@ -1,4 +1,4 @@
-Hello!
+﻿Hello!
 |NEXT|
 My name is Erwin!
 |NEXT|
@@ -31,4 +31,38 @@ This h-looking symbol (pronounced h-bar) represents the planck length divided by
 It's basically the smallest measurement of length that scientists have been able to find.
 |NEXT|
 This represents Psi. It's a function that represents the shape of the wave function. |PAUSE|
-This will change depending on the rest of the equation (because it would be a different situation each time).
+This will change depending on the rest of the equation (because it would be a different situation each time). |PAUSE|
+The one you see here is shorthand, as it's a function determined in terms of space in time. Ψ(x,t)
+|NEXT|
+This V(x) is a function that is representative of the particle's potential energy. |PAUSE|
+It's represented in terms of x.
+|NEXT|
+X denotes the particle's position in space.
+|NEXT|
+If you know your calculus you should have been able to spot that at various points in the equation, we're finding derivatives.|PAUSE|
+Here, we're finding the derivative of Psi with respect to time. |PAUSE|
+This is actually the quantum operator (basically just meaning that we can write it shorthand as a function) for the particles total energy.
+|NEXT|
+This whole chunk here is the operator representing the particle's kinetic energy. |PAUSE|
+The m here represents the paricle's mass, as usual.
+|NEXT|
+So what does this mean? This equation tells us that the particle's energy level are equal the potential energy plus its kinetic energy.|PAUSE|
+If we know the particle's total energy, we can derive everything we'd need to know about this particle.
+|NEXT|
+You can actually derive this from classical energy equation (E = KE + PE).|PAUSE|
+However, this is beyond the scope of this presentation.
+|NEXT|
+Despite what I said earlier about classical and quantum mechanics being separated, everything actually has a wave function (Ψ). |PAUSE|
+However, the wave function is inversely proportional the mass. Anything larger than a molecule has a completely negligble wave function.
+|NEXT|
+Anyways, like I said earlier, using Schrodinger's equation, we can derive everything we'd need to know about a quantum particle. |PAUSE|
+Including the wave function.
+|NEXT|
+However, this can get *really* messy really quickly, so we'll make some assumptions.
+|NEXT|
+First,  let's assume that this particle is in a square box. This box is inpenetrable by the particle (it's infinitely thick).
+|NEXT|
+Now let's assume that his box has an infinite height.|PAUSE| We can negate the equation's potential energy because v(x) would be zero when inside the box, and infinitely high outside the box.
+|NEXT|
+That might not make sense at first, but the reason this works is because systems will want to decrease or reduce stress onto them. |PAUSE|
+Think of a ball being lifted from the ground. It gains potential energy, but as soon as you stop doing work on it, it falls, and its potential energy goes back to zero.

@@ -7,6 +7,7 @@ TagManager:
   - Elec
   - equation
   - equationVariable
+  - wallmaster
   layers:
   - Default
   - TransparentFX
